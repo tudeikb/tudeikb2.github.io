@@ -1,5 +1,5 @@
 url:              'https://tudeikb.github.io'
-baseurl:          '/jekyll-gitbook'
+baseurl:          ''
 rss:              RSS
 
 # bootstrap: use the remote theme for the site itself
