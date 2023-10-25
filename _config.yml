@@ -1,13 +1,25 @@
+# Configurations
+title:            tudeikb
+longtitle:        tudeikb
+author:           tudeikb
+#email:            
+description: >
+  tudeikb - based on https://sighingnow.github.io/jekyll-gitbook
+
+version:          1.0
+gitbook_version:  3.2.3
+
 url:              'https://tudeikb.github.io'
-baseurl:          ''
+baseurl:          '/tudeikb'
+rss:              RSS
 
 # bootstrap: use the remote theme for the site itself
-# remote_theme: sighingnow/jekyll-gitbook
+remote_theme: sighingnow/jekyll-gitbook
 
 toc:
   enabled: true
-  h_min: 1
-  h_max: 3
+  #h_min: 1
+  #h_max: 3
 
 # customize the link favicon in header, will be {{site.baseurl}}/{{site.favicon_path}}
 favicon_path:     /assets/gitbook/images/favicon.ico
@@ -29,8 +41,7 @@ syntax_highlighter_style: colorful
 markdown_ext:             markdown,mkdown,mkdn,mkd,md
 
 # Permalinks
-#permalink:                /:categories/:year-:month-:day-:title:output_ext
-permalink:                /:categories/:title:output_ext
+permalink:                /:categories/:year-:month-:day-:title:output_ext
 
 # Disqus comments
 # disqushandler:            sighingnow
