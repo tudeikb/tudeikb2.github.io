@@ -54,6 +54,7 @@ require(["gitbook", "jquery"], function (gitbook, $) {
     gitbook.events.bind("page.change", function () {
         $("pre").each(function () {
             $(this).css("position", "relative");
+            $(this).css("overflow", "auto");
 
             var $copyCodeButton = $("<button class='copy-code-button'>Copy</button>");
             $copyCodeButton.css({ 
@@ -78,6 +79,13 @@ require(["gitbook", "jquery"], function (gitbook, $) {
             }, function() {
                 $copyCodeButton.css("display", "none");
             });
+
+            $(this).scroll(function() {
+                var scrollLeft = $(this).scrollLeft();
+                $copyCodeButton.css("right", 5 - scrollLeft + "px");
+            });
+            var scrollLeft = $(this).scrollLeft();
+            $copyCodeButton.css("right", 5 - scrollLeft + "px");
 
             $copyCodeButton.click(function () {
                 var $codeContainer = $(this).siblings("code");
