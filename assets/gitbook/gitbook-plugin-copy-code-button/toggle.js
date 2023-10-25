@@ -62,12 +62,12 @@ require(["gitbook", "jquery"], function (gitbook, $) {
                 "top": "5px", 
                 "right": "5px", 
                 "padding": "3px", 
-                "background-color": "#313E4E", 
+                "background-color": "#3c403c", 
                 "color": "white", 
-                "border-radius": "5px", 
-                "-moz-border-radius": "5px", 
-                "-webkit-border-radius": "5px", 
-                "border": "1px solid #CCCCCC",
+                "border-radius": "2px", 
+                "-moz-border-radius": "2px", 
+                "-webkit-border-radius": "2px", 
+                "border": "1px solid #3c403c",
                 "cursor": "pointer",
                 "display": "none"
             }).hover(function() {
