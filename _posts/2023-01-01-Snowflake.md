@@ -8,7 +8,7 @@ layout: post
 
 ## COPY INTO (unload) from Snowflake to GCS
 
-```
+```sql
 copy into @<my_database_name>.<my_schema_name>.<my_stage_name>/gcs_folder_name/
 from (
     select
@@ -17,7 +17,7 @@ from (
     );
 ```
 
-```
+```sql
 copy into @<my_database_name>.<my_schema_name>.<my_stage_name>/gcs_folder_name/file_name.parquet
 from (
     select
