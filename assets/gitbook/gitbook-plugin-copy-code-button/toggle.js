@@ -66,8 +66,19 @@ require(["gitbook", "jquery"], function (gitbook, $) {
                 "border-radius": "5px", 
                 "-moz-border-radius": "5px", 
                 "-webkit-border-radius": "5px", 
-                "border": "2px solid #CCCCCC" 
+                "border": "1px solid #CCCCCC",
+                "cursor": "pointer",
+                "display": "none"
+            }).hover(function() {
+                $(this).css("display", "block");
             });
+
+            $(this).hover(function() {
+                $copyCodeButton.css("display", "block");
+            }, function() {
+                $copyCodeButton.css("display", "none");
+            });
+
             $copyCodeButton.click(function () {
                 var $codeContainer = $(this).siblings("code");
                 if ($codeContainer) {
